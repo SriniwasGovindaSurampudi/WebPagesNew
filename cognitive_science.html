@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cognitive Science Papers Read</title>
+	<style>
+		#color-code{
+			font-family:Helvetica;
+			font-size: 10;
+			position: fixed;
+		    bottom: 0;
+		    right: 0;
+		    width: 500px;
+		    border: 3px ;
+			text-align: center;
+		}
+		#papers{
+			font-family: Helvetica;
+		}
+		table {
+				width: 100%
+		}
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th {
+			padding: 5px;
+			text-align: center;
+		}
+		td {
+			padding: 5px;
+			text-align: justify;
+		}
+		table tr:nth-child(even) {
+			background-color: #fff;
+		}
+		table tr:nth-child(odd) {
+			background-color: #eee;
+		}
+		table th {
+			background-color: black;
+			color: white;
+		}
+		a:link {
+	    color: green;
+	    background-color: transparent;
+	    text-decoration: none;
+		}
+		a:visited {
+		    color: green;
+		    background-color: transparent;
+		    text-decoration: none;
+		}
+		a:hover {
+	 	   color: red;
+	 	   background-color: transparent;
+	 	   text-decoration: underline;
+		}
+		a:active {
+	 	   color: yellow;
+	 	   background-color: transparent;
+	 	   text-decoration: underline;
+		}
+		h1 {
+			text-align: center;
+		}
+		select {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+<div id="color-code">
+	<table id="color_codes">
+		<tr>color code</tr>
+		<tr>
+			<td style="background-color: rgba(255, 255, 0, 1.0);">essential</td>
+			<td style="background-color: rgba(0, 255, 0, 1.0)">important</td>
+			<td style="background-color: rgba(255, 0, 0, 1.0);">must know</td>
+			<td style="background-color: rgba(0, 0, 255, 1.0);">should know</td>
+			<td style="background-color: rgba(55, 55, 55, 0.5);">ok</td>
+		</tr>
+	</table>
+</div>
+<div id="papers">
+	<h1>COGNITIVE SCIENCE PAPERS</h1>
+		<table>
+			<tr>
+				<th style="width:200px">Title</th>
+				<th style="width:300px">Summary</th>
+				<th style="width:150px">Authors</th>
+				<th style="width:50px">Publication Year</th>
+				<th style="width:150px">Citation(Chicago)</th>
+				<th style="width:50px">Link</th>
+				<td style="width:50px; background-color:rgba(0, 0, 0, 1.0);"></td>
+			</tr>
+			<tr>
+				<td>Network diffusion accurately models the relationship between structural and functional brain connectivity networks</td>
+				<td>This paper hypothesises that diffusion of signals on structural connection of the brain network can predict functinoal connectivity. Considering only one ROI actice at a time, the activation signals reaching its neighbor ROIs, through diffusion, at any given time is hypothesised as the pairwise correlation between these ROIs. These individually and independently active ROI activation diffusions are stacked together and hypothesised that the overall functional correlaton matrix can match at a particular scale.</td>
+				<td>Farras Abdelnour, Henning U. Voss, Ashish Raj</td>
+				<td>2013</td>
+				<td>Abdelnour, Farras, Henning U. Voss, and Ashish Raj. "Network diffusion accurately models the relationship between structural and functional brain connectivity networks." Neuroimage 90 (2014): 335-347.</td>
+				<td>
+					<a href="http://www.sciencedirect.com/science/article/pii/S1053811913012597" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(0, 255, 0, 1.0);"></td>
+			</tr>
+			<tr>
+				<td>Modularity and community structure in networks</td>
+				<td>This paper defines a new graph matrix called modularity matrix. Spectrum of this matrix is used to detect the community structure in a much efficient way</td>
+				<td>M. E. J. Newman</td>
+				<td>2006</td>
+				<td>Newman, Mark EJ. "Modularity and community structure in networks." Proceedings of the national academy of sciences 103, no. 23 (2006): 8577-8582.</td>
+				<td>
+					<a href="http://www.pnas.org/content/103/23/8577.full" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: grey"></td>
+			</tr>
+			<tr>
+				<td>The UCLA multimodal connectivity database: a web-based platform for brain connectivity matrix sharing and analysis</td>
+				<td>This paper mentions about the <a href="http://umcd.humanconnectomeproject.org" target="_blank">website</a> for accessing and analysing various structural and functional matrices, which are publically available. To demonstrate the site’s functionality, whole brain functional and structural connectivity matrices are derived from 60 subjects’ (ages 26–45) resting state fMRI (rs-fMRI) and dwMRI data and uploaded to the site. Graph theoretical properties can be applied on the connectivity matrices to infer about global and local properties. Functional connectivity matrices are derived from resting state fMRI, dwMRI, and structural connectivity matrices are derived from DTI, MRI methods.</td>
+				<td>Jesse A. Brown, Jeffrey D. Rudie, Anita Bandrowski, John D. Van Horn and Susan Y. Bookheimer</td>
+				<td>2012</td>
+				<td>Brown, Jesse A., Jeffrey D. Rudie, Anita Bandrowski, John D. Van Horn, and Susan Y. Bookheimer. "The UCLA multimodal connectivity database: a web-based platform for brain connectivity matrix sharing and analysis." Frontiers in neuroinformatics 6 (2012): 28.</td>
+				<td>
+					<a href="https://scholar.google.co.in/scholar?lookup=0&q=The+UCLA+multimodal+connectivity+database:+a+web-based+platform+for+brain+connectivity+matrix+sharing+and+analysis&hl=en&as_sdt=0,5" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: purple"></td>
+			</tr>
+			<tr>
+				<td>Can structure predict function in the human brain?</td>
+				<td>This is a review paper that collectively comments on the effort of relating structural and functional connectivity data at multiple scales, i.e. micro and macro scale computational models. It also reviews on the practicality, assumptions ad scope of the present models. Importantly, relationship is robust for FC calculated in low frequencies(rs-fMRI) and longer sampling periods(minutes). Modeling this relationship is particularly useful as it is an indirect link towards cognitive processes.</td>
+				<td>CJ Honey, JP Thivierge, O Sporns </td>
+				<td>2009</td>
+				<td>Honey, Christopher J., Jean-Philippe Thivierge, and Olaf Sporns. "Can structure predict function in the human brain?." Neuroimage 52, no. 3 (2010): 766-776.</td>
+				<td>
+					<a href="http://chialvo.org/Curso/UBACurso/DIA9/Papers/HoneyStructureFunction.pdf" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(255, 0, 0, 1.0);"></td>
+			</tr>
+			<tr>
+				<td>An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest</td>
+				<td>This paper parcellates human cerebral cortex on magetic resonence images (MRI) into gyral based 68 region of interests (ROIs). Each hemisphere has 34 ROIs. They use a training set of 40 MRI scans and automatically label regions with an with an average interclass corelation of 0.835 across all of the ROIs. The data we use is parcellated using this method.</td>
+				<td>Desikan, Rahul S., Florent Ségonne, Bruce Fischl, Brian T. Quinn, Bradford C. Dickerson, Deborah Blacker, Randy L. Buckner, et al. </td>
+				<td>2006</td>
+				<td>Desikan, Rahul S., Florent Ségonne, Bruce Fischl, Brian T. Quinn, Bradford C. Dickerson, Deborah Blacker, Randy L. Buckner et al. "An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest." Neuroimage 31, no. 3 (2006): 968-980.
+				</td>
+				<td>
+					<a href="https://surfer.nmr.mgh.harvard.edu/ftp/articles/desikan06-parcellation.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Structural Architecture Supports Functional Organization in the Human Aging Brain at a Regionwise and Network Level</td>
+				<td>This paper studies age related changes in structural and functional organization of brain at all regions and at networks level. It characterizes SC-FC coupling and infers about the changes in age groups. This measure uniquely predicts age. Throughout subjects of different ages, the model captures many region-wise changes, but network-wise SC-FC relationships are yet to be discovered.</td>
+				<td>Zimmermann, Joelle, Petra Ritter, Kelly Shen, Simon Rothmeier, Michael Schirner, and Anthony R. McIntosh
+				</td>
+				<td>2016</td>
+				<td>Zimmermann, Joelle, Petra Ritter, Kelly Shen, Simon Rothmeier, Michael Schirner, and Anthony R. McIntosh. "Structural architecture supports functional organization in the human aging brain at a regionwise and network level." Human brain mapping (2016).
+				</td>
+				<td></td>
+				<td style="background-color: rgba(25, 25, 25, 0.5);"></td>
+			</tr>
+			<tr>
+				<td>Theoretical Neuroanatomy: Relating Anatomical and Functional Connectivity in Graphs and Cortical Connection Matrices</td>
+				<td>This paper discusses about interpreting FC as covariance matrix of the neural activity. They assume that the neural activity that emerges can be described as a multidimensional stochastic process whose joint probability density function can be characterized by measures of entropy and mutual information. They selected among structurally varying graphs using as selective criteria a number of global information-theoretical measures that characterize functional connectivity (FC). They found that dynamics with high complaxity were supported by graphs whose units were sparsely and reciprocally interconnected. Further, they find a pettern in clusters; hierarchical subclusters and more clearly defined subdivisions.</td>
+				<td>Sporns, Olaf, Giulio Tononi, and Gerald M. Edelman.</td>
+				<td>2000</td>
+				<td>Sporns, Olaf, Giulio Tononi, and Gerald M. Edelman. "Theoretical neuroanatomy: relating anatomical and functional connectivity in graphs and cortical connection matrices." Cerebral Cortex 10, no. 2 (2000): 127-141.</td>
+				<td>
+					<a href="http://cercor.oxfordjournals.org/content/10/2/127.full" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(0, 255, 0, 1.0);"></td>
+			</tr>
+			<tr>
+				<td>Complex brain networks: graph theoretical analysis of structural and functional systems</td>
+				<td>This paper is a review of graph theoretical study of brain. It discusses from scratch about formation of structural and functional graphs from multiple techniques - dMRI, fMRI, EEG, MEG, MEA. It then discusses some key organizational principles of graph properties as 'small-worldness', modularity, hubs & node centrality, etc. Further they discuss the importance of SC-FC matrices (corss-correlation or mutual information as edges) and their relationship through computational models. Finally, they suggest an applcation for the SC-FC relationship for network altering brain disorders.</td>
+				<td>Bullmore, Ed, and Olaf Sporns</td>
+				<td>2009</td>
+				<td>Bullmore, Ed, and Olaf Sporns. "Complex brain networks: graph theoretical analysis of structural and functional systems." Nature Reviews Neuroscience 10, no. 3 (2009): 186-198.</td>
+				<td>
+					<a href="http://www.indiana.edu/~cortex/networks_nrn.pdf" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(0, 255, 0, 1.0);"></td>
+			</tr>
+			<tr>
+				<td>Neural modeling, functional brain imaging, and cognition</td>
+				<td>This paper stresses on the importance of functional imaging as a tool for computational cognitive neuroscience science. They classify various techniques of neural-modeling methods into two major divisions, viz. (1) subtraction vs covariance and (2) statistical vs modeling. <br> <i> MKL model should belong  in the middle of these two divisions. </i></td>
+				<td>Barry Horwitz, M-A. Taganets and Anthony Randal McIntosh</td>
+				<td>1999</td>
+				<td>Horwitz, Barry, M. A. Tagamets, and Anthony Randal McIntosh. "Neural modeling, functional brain imaging, and cognition." Trends in cognitive sciences 3, no. 3 (1999): 91-98.</td>
+				<td>
+					<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.141.7106&rep=rep1&type=pdf" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(25, 25, 25, 0.5);"></td>
+			</tr>
+			<tr>
+				<td>Spontaneous fluctuations in brain activity observed with functional magnetic resonsnce imaging</td>
+				<td>This paper provides a comprhensive review on spontaneous fMRI data; resting state and task state. The paper describes the meaning of spontaneous neuronal activity, and the techniques for its study (mostly ICA). <i>MKL might fill in the drawbacks of ICA.</i> The paper tries to interpret the fluctuations in terms of electrophysiological phenomenon and provides some future direction of using this task independent correlation pattern for comparison between groups.</td>
+				<td>Michael D. Fox and Marcus E. Raichle</td>
+				<td>2007</td>
+				<td>Fox, Michael D., and Marcus E. Raichle. "Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging." Nature Reviews Neuroscience 8, no. 9 (2007): 700-711.</td>
+				<td>
+					<a href="https://www.researchgate.net/profile/Michael_Fox11/publication/6134626_Spontaneous_Fluctuations_in_Brain_Activity_Observed_with_Functional_Magnetic_Resonance_Imaging/links/00b7d52b9dea034597000000.pdf" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(0, 0, 255, 1.0);"></td>
+			</tr>
+			<tr>
+				<td>Structure and function of complex brain networks</td>
+				<td>This paper provides an excellent comprehensve summary of the structural and functional brain networks; structural, functional and effective connectivity. <br> Structural networks are decomposed into modules (segregated view) and these modelues are interlined by very few strongly connected hubs (rich club and core). <br> Functional dynamics, initially thought as noise, was consistently forming topological patterns across humans and mammals and various trials. The recent hypothesis is that the task evoked activity shaped by anatomy is rehearsed by 'resting state networks' further strengthening the pathways according to Hebbian plasticity. <br> Finally, the paper discusses clinical applications and the position of connectomics in effort of understanding the brain.</td>
+				<td>Olaf Sporns,</td>
+				<td>2013</td>
+				<td>Sporns, Olaf. "Structure and function of complex brain networks." Dialogues Clin Neurosci 15, no. 3 (2013): 247-262.</td>
+				<td>
+					<a href="http://www.dialogues-cns.org/publication/structure-and-function-of-complex-brain-networks/" target="_blank">Find here</a>
+				</td>
+				<td style="background-color: rgba(0, 255, 0, 1.0);"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+</div>
+</body>
+</html>
