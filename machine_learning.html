@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Machine Learning Papers Read</title>
+	<style>
+		#color-code{
+			font-family:Helvetica;
+			font-size: 10;
+			position: fixed;
+		    bottom: 0;
+		    right: 0;
+		    width: 500px;
+		    border: 3px ;
+			text-align: center;
+		}
+		#papers{
+			font-family: Helvetica;
+		}
+		table {
+				width: 100%
+		}
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th {
+			padding: 5px;
+			text-align: center;
+		}
+		td {
+			padding: 5px;
+			text-align: justify;
+		}
+		table tr:nth-child(even) {
+			background-color: #fff;
+		}
+		table tr:nth-child(odd) {
+			background-color: #eee;
+		}
+		table th {
+			background-color: black;
+			color: white;
+		}
+		a:link {
+	    color: green;
+	    background-color: transparent;
+	    text-decoration: none;
+		}
+		a:visited {
+		    color: green;
+		    background-color: transparent;
+		    text-decoration: none;
+		}
+		a:hover {
+	 	   color: red;
+	 	   background-color: transparent;
+	 	   text-decoration: underline;
+		}
+		a:active {
+	 	   color: yellow;
+	 	   background-color: transparent;
+	 	   text-decoration: underline;
+		}
+		h1 {
+			text-align: center;
+		}
+		select {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+<div id="color-code">
+	<table id="color_codes">
+		<tr>color code</tr>
+		<tr>
+			<td style="background-color: rgba(255, 255, 0, 1.0);">essential</td>
+			<td style="background-color: rgba(0, 255, 0, 1.0)">important</td>
+			<td style="background-color: rgba(255, 0, 0, 1.0);">must know</td>
+			<td style="background-color: rgba(0, 0, 255, 1.0);">should know</td>
+			<td style="background-color: rgba(55, 55, 55, 0.5);">ok</td>
+		</tr>
+	</table>
+</div>
+<div id="papers">
+	<h1>MACHINE LEARNING PAPERS</h1>
+		<table>
+			<tr>
+				<th style="width:200px">Title</th>
+				<th style="width:300px">Summary</th>
+				<th style="width:150px">Authors</th>
+				<th style="width:50px">Publication Year</th>
+				<th style="width:150px">Citation(Chicago)</th>
+				<th style="width:50px">Link</th>
+			</tr>
+			<tr>
+				<td>A Tutorial on Spectral Clustering</td>
+				<td>Three tyes of graph laplacians, unnormalized, random walk and symmetric graph laplacians, and their properties are described. Their related spectral clustering algorithms are derived from scratch from several different approaches viz graph-cuts, random-walk and perturbation theory point of views.</td>
+				<td>Ulrike von Luxburg</td>
+				<td>2007</td>
+				<td>Von Luxburg, Ulrike. "A tutorial on spectral clustering." Statistics and computing 17, no. 4 (2007): 395-416.</td>
+				<td>
+					<a href="http://arxiv.org/pdf/0711.0189.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Laplacian Eigenmaps for Dimensionality Reduction and Data Representation</td>
+				<td>This paper deals with the problem of appropriate representation of data lying on a low dimensional manifold, which is in a higher dimensional space. The paper shows correspondences between the proposed method and Laplace Beltrami operator on manifolds  and connects with the heat equation. The geometrically motivated algorithm is an efficient approach for nonlinear dimensionality reduction. This algorithm uses the eigen values and eigen vectors of graph Laplacian. This is very much related to spectral clustering algorithm, just that the eigen vectors are used as bases for the embedding to reduce dimensionality of data.</td>
+				<td>Mikhail Belkin, Partha Niyogi</td>
+				<td>2003</td>
+				<td>Belkin, Mikhail, and Partha Niyogi. "Laplacian eigenmaps for dimensionality reduction and data representation." Neural computation 15, no. 6 (2003): 1373-1396.</td>
+				<td>
+					<a href="https://www.cs.rochester.edu/u/stefanko/Teaching/09CS446/Laplacian.pdf" target="_blank">Find here</a>
+				</td>
+
+			</tr>
+			<tr>
+				<td>Machine learning with brain graphs: predictive modeling approaches for functional imaging in systems neuroscience</td>
+				<td>This paper clearly explains the different stages of machine learning with brain graphs. How the time series data are processed from the voxels, how these time series are used to form brain graphs, and then how are statistical machine learning methods applied for predictive modelling. </td>
+				<td>Jonas Richiardi, Sophie Achard, Horst Bunke, and Dimitri Van De Ville</td>
+				<td>2013</td>
+				<td>Richiardi, Jonas, Sophie Achard, Horst Bunke, and Dimitri Van De Ville. "Machine learning with brain graphs: predictive modeling approaches for functional imaging in systems neuroscience." Signal Processing Magazine, IEEE 30, no. 3 (2013): 58-70.</td>
+				<td>
+					<a href="http://web.stanford.edu/~richiard/papers/2013-Richiardi-IEEESigProcMag.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Co-clustering documents and words using Bipartite Spectral Graph Partitioning</td>
+				<td>This paper introduces the idea of clustering two different datasets, which are related to each other and independently clustered well, together. The idea is to form a matrix of size #words by #documents, and then use the adjacency matrix of the induced graph whose entries indicate presence of a word in a document. SVD of a derived matrix using the laplacian of the graph provides clusters of both words and documents simultaneously. This technique is extended for multiple partions also.</td>
+				<td>Inderjit S. Dhillon </td>
+				<td>2001</td>
+				<td>Dhillon, Inderjit S. "Co-clustering documents and words using bipartite spectral graph partitioning." In Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 269-274. ACM, 2001.</td>
+				<td>
+					<a href="http://www.cs.utexas.edu/users/inderjit/public_papers/kdd_bipartite.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Clustering with Multiple Graphs</td>
+				<td>This paper proposes a novel method to combine information provided by different graphs on the same set of vertices for better clustering of those vretices. The method called 'Linked Matrix Factorization (LMF)' formulates the problem of extracting the common information from all the graphs as an optimization problem and solves it with quasi-Newton method Limited memory BFGS. The paper also presents a semi-supervised algorithm for the same purpose of clustering.</td>
+				<td>Tang, Wei, Zhengdong Lu, and Inderjit S. Dhillon</td>
+				<td>2009</td>
+				<td>Tang, Wei, Zhengdong Lu, and Inderjit S. Dhillon. "Clustering with multiple graphs." In Data Mining, 2009. ICDM'09. Ninth IEEE International Conference on, pp. 1016-1021. IEEE, 2009.</td>
+				<td>
+					<a href="http://research.microsoft.com/pubs/147190/icdm09final.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Clustering With Multi-Layer Graphs: A Spectral Perspective</td>
+				<td>This paper focusses on clustering nodes in a graph using multiple view-points or multi-layers of the graph. It proposes two methods, both based on deriving 'joint-spectrum' of the whole graph of multiple layers; i.e a set of eigenvectors that capture the essence of the multiple layers. First method computes eigenvectors of the graph that tend to reflect average granularity provided by each layer weighted equally. The second method weighs the layer providing the most information more, computes its eigenvectors and uses these to regularize the eigenvectors of the subsequent layers iteratively to obtain the final set of eigenvectors that represents overall properties from all the layers. Second method is performs better than the first.</td>
+				<td>Xiaowen Dong, Pascal Frossard, Pierre Vandergheynst, and Nikolai Nefedov</td>
+				<td>2012</td>
+				<td>Dong, Xiaowen, Pascal Frossard, Pierre Vandergheynst, and Nikolai Nefedov. "Clustering with multi-layer graphs: A spectral perspective." Signal Processing, IEEE Transactions on 60, no. 11 (2012): 5820-5831.</td>
+				<td>
+					<a href="http://web.media.mit.edu/~xdong/paper/tsp2012.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Gaussian mixture models</td>
+				<td>This paper summarizes gaussian mixture models, how EM is applied for parameter estimation. This paper concisely presents the concepts involved in GMM.</td>
+				<td>Douglas Reynolds</td>
+				<td>2015</td>
+				<td>Reynolds, Douglas. "Gaussian mixture models." Encyclopedia of Biometrics (2015): 827-832.</td>
+				<td>
+					<a href="http://llwebprod2.ll.mit.edu/mission/cybersec/publications/publication-files/full_papers/0802_Reynolds_Biometrics-GMM.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Large-Scale Multi-View Spectral Clustering via Bipartite Graph</td>
+				<td>This paper proposes a novel method of combining multiple views of same set of data points represented as graphs. The algorithm randomly selects some consensus points from data set and assigns a similarity between raw data points and the selected points. This bipartite graph is used for finding the spectrum of the combination of laplacians of multiple views.</td>
+				<td>Yeqing Li, Feiping Nie, Heng Huang, Junzhou Huang</td>
+				<td>2015</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>SimpleMKL</td>
+				<td>This paper introduces a method for solving Multiple Kernels in SVM framework through a weighted 2-norm regularization formulation with an additional constraint on the weights that encourages sparse kernel combinations. The authors extend the method beyond two-class classification to regression and multi-class classification also.</td>
+				<td>Rakotomamonjy, Alain, Francis Bach, Stéphane Canu, and Yves Grandvale</td>
+				<td>2008</td>
+				<td>Rakotomamonjy, Alain, Francis Bach, Stéphane Canu, and Yves Grandvalet. "SimpleMKL." Journal of Machine Learning Research 9 (2008): 2491-2521.</td>
+				<td>
+					<a href="https://hal.archives-ouvertes.fr/hal-00218338/document" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Diffusion Kernels on Graphs and Other Discrete Structures</td>
+				<td>This paper provides a different meaning for the graph heat kernel, diffusion kernel. They assume a stochastic process on the nodes of the graph. The heat kernel at a scale represents the covariance matrix of the random variables defined at every node of the graph.</td>
+				<td>Risi Imre Kondor, John Lafferty</td>
+				<td>2002</td>
+				<td>Kondor, Risi Imre, and John Lafferty. "Diffusion kernels on graphs and other discrete structures." In Proceedings of the 19th international conference on machine learning, pp. 315-322. 2002.</td>
+				<td>
+					<a href="http://people.cs.uchicago.edu/~risi/papers/diffusion-kernels.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>A regularization framework for learning from graph data</td>
+				<td></td>
+				<td>Zhou, Dengyong, and Bernhard Schölkopf.</td>
+				<td>2004</td>
+				<td>Zhou, Dengyong, and Bernhard Schölkopf. "A regularization framework for learning from graph data." In ICML workshop on statistical relational learning and Its connections to other fields, vol. 15, pp. 67-68. 2004.</td>
+				<td>
+					<a href="http://131.107.65.14/en-us/um/people/denzho/papers/RFLG.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Consistent resting-state networks across healthy subjects</td>
+				<td>In this paper the authors apply tensor-PICA to resting-state fMRI data with the aim of identifying resting coherencies that are consistent across subjects and sessions. They find 10 such networks including DMN, Attention, Auditory processing, Memory, and Executive functions."Ten different and reproducible components are presented in this article. This division into separate systems potentially reflects the organization of the human brain, although we do not suggest that the brain consists of disconnected functional resting networks. In this article, components are defined as spatially independent areas showing coherence in low-frequency fluctuations. This by no means excludes the notion that there are interactions possible between different resting patterns and that the human brain demonstrates properties of a small-world network/"</td>
+				<td>J. S. Damoiseaux, S. A. R. B. Rombouts, F. Barkhof􏰀, P. Scheltens, C. J. Stam, S. M. Smith, and C. F. Beckmann</td>
+				<td>2006</td>
+				<td>Damoiseaux, J. S., S. A. R. B. Rombouts, F. Barkhof, P. Scheltens, C. J. Stam, Stephen M. Smith, and C. F. Beckmann. "Consistent resting-state networks across healthy subjects." Proceedings of the national academy of sciences 103, no. 37 (2006): 13848-13853.</td>
+				<td>
+					<a href="http://www.pnas.org/content/103/37/13848.full" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Exploring large feature spaces with hierarchical multiple kernel learning</td>
+				<td>This paper assumes that a kernel is decomposable into a large sum of individual bases kernels which can be embedded in a directed acyclic graph. This paper deals with hierarchical multiple kernel combination.</td>
+				<td>Francis Bach</td>
+				<td>2009</td>
+				<td>Bach, Francis R. "Exploring large feature spaces with hierarchical multiple kernel learning." In Advances in neural information processing systems, pp. 105-112. 2009.</td>
+				<td>
+					<a href="http://papers.nips.cc/paper/3418-exploring-large-feature-spaces-with-hierarchical-multiple-kernel-learning.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>More Generality in Efficient Multiple Kernel Learning</td>
+				<td></td>
+				<td></td>
+				<td>2009</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>Combining Graph Laplacians for Semi–Supervised Learning</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_818.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Learning Convex Combinations of Continuously Parameterized Basic Kernels</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.329.9024&rep=rep1&type=pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Learning the Kernel Function via Regularization</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<a href="http://www.jmlr.org/papers/volume6/micchelli05a/micchelli05a.pdf" target="_blank">Find here</a>
+				</td>
+			</tr>
+		</table>
+</div>
+		
+</body>
+</html>
